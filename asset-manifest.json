@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/deepakakella/static/css/main.8cea2486.css",
+    "main.js": "/deepakakella/static/js/main.8bfbac06.js",
+    "static/js/111.ad1cef69.chunk.js": "/deepakakella/static/js/111.ad1cef69.chunk.js",
+    "index.html": "/deepakakella/index.html",
+    "main.8cea2486.css.map": "/deepakakella/static/css/main.8cea2486.css.map",
+    "main.8bfbac06.js.map": "/deepakakella/static/js/main.8bfbac06.js.map",
+    "111.ad1cef69.chunk.js.map": "/deepakakella/static/js/111.ad1cef69.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8cea2486.css",
+    "static/js/main.8bfbac06.js"
+  ]
+}
