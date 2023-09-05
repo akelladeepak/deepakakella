@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 0 auto;;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1350px;
+    }
+}
+
+.section_title p {
+    font-weight: 500;
+    font-size: 22px;
+    color: #fd630a;
+}
+
+.section_title h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.5;
+    text-transform: capitalize;
+    color: white;
+}
+
+.section_title.center {
+    text-align: center;  
+}
+
+.experience-section {
+    padding: 65px 0 100px;
+    background-color: black;
+    position: relative
+}
+
+.experience-section .experience-items {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.experience-item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+
+.experience-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.experience-info p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    opacity: 1;
+    -webkit-animation: showText 0.5s 1s linear forwards;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+.progress-line {
+    margin-top: 7px;
+    height: 10px;
+    width: 100%;
+    background-color: #cdcdcd;
+    border-radius: 50px;
+    position: relative;
+}
+
+.progress-line span {
+    -webkit-transform: scalX(0);
+    transform: scalX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    height: 100%;
+    border-radius: 50px;
+    position: absolute;
+    background-color: #fd6e0a;
+    transition: 1s all;
+}
+
+.progress-line span.animate {
+    -webkit-animation: animate 1.5s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: animate 1.5s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@-webkit-keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes animate {
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+@keyframes animate {
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+/*Flipping Cards*/
+.skillsSection {
+    padding: 50px;
+    text-align: center;
+}
+
+section {
+    display: block;
+}
+
+.skillsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+    
+}
+
+.skill:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 140px;
+    width: 150px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skill:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 140px;
+    width: 150px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    height: 80px;
+}
+
+.skill p {
+    color: black;
+    background-color: white;
+}
+
